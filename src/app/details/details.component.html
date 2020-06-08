@@ -1,0 +1,38 @@
+<header>
+
+    <div class="container" style="padding-top: 2rem;" >
+
+        <div class="col-12 text-center w-100" style="margin-bottom:2rem;color: cornsilk;">
+            <h2>Holiday Details</h2>
+        </div>
+
+        <span *ngFor ="let item of holidays">
+        <span *ngIf ="item.Name == name">
+            <div class = "col-12 w-100">
+                <h3 class=" w-100 text-center" style="color: burlywood !important ;">
+                    Date : {{item.Date}}
+                </h3>
+            </div>
+            <div class="col-12 border w-100 text-center" style="font-style: italic;">
+
+                <h4 class=" w-100 text-center" style="color: lawngreen !important; padding: 5px;">
+                    {{item.Name}}
+                </h4>
+
+            </div>
+            <div class="col-12 border w-100 text-center">
+                <img src={{item.url}} alt="Holiday Picture"  width="200" height="200"  style="vertical-align:middle; margin: auto; padding: 20px;">
+            </div>
+
+            <div class="col-12 border w-100 text-center" style="color: black; padding-top: 10px;">
+                <p>
+                {{item.Description}}
+                   </p>
+            </div>
+            </span>
+        </span>
+
+
+    </div>
+
+</header>

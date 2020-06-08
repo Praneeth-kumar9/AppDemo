@@ -1,0 +1,23 @@
+<div style="margin-top:2rem">
+    <h1>
+        HOLIDAYS LIST
+    </h1>
+
+    <table id ="users">
+        <tr>
+            <th *ngFor = "let column of headers">
+                {{column}}
+            </th>
+        </tr>
+
+        <tr *ngFor = "let item of allholidays">
+            <td *ngFor="let column of head1">
+                {{item[column]}}
+            </td>
+            <td>
+            <button type="button" class="btn btn-success" routerLink="/details/{{item.Name}}">Details</button>
+            </td>
+        </tr>
+    </table>
+
+</div>

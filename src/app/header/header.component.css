@@ -1,0 +1,16 @@
+.heading
+{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(7,121,222,1) 0%, rgba(20,72,140,1) 90% );
+  background-size: cover;
+  background-position: center;
+}
+
+figure {
+  float: left;
+}
+
+figcaption {
+  color: white;
+  font-style: italic;
+  text-align: center;
+}

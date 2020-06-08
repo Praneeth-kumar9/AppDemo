@@ -1,0 +1,15 @@
+header
+{
+  width: 100%;
+  min-height: 83vh;
+  background: rgb(2,0,36);
+  background-color: rgb(52, 125, 143);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

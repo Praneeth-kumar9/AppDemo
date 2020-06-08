@@ -1,0 +1,27 @@
+<div style="margin-top:2rem">
+    <h1>
+       THIS MONTH HOLIDAYS
+    </h1>
+  <div *ngIf="databymonth!=null">
+    <table id ="users">
+        <tr>
+            <th *ngFor = "let column of headers">
+                {{column}}
+            </th>
+        </tr>
+
+        <tr *ngFor = "let item of databymonth">
+            <td *ngFor="let column of head1">
+                {{item[column]}}
+            </td>
+            <td>
+            <button type="button" class="btn btn-success" routerLink="/details/{{item.Name}}">Details</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div *ngIf ="databymonth==null">
+    <h1 style="text-align:center">NO HOLIDAYS IN THIS MONTH</h1>
+    </div>
+
+</div>
